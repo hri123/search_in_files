@@ -27,3 +27,12 @@ if __name__ == "__main__":
 # search phrase matches the lines ?
 
 # print result
+
+# TODO:
+
+# indexing
+
+# simple split at newline, split into english sentences
+
+# simple search, regex search, fuzzy search, semantic search
+

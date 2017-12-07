@@ -36,9 +36,13 @@ if __name__ == "__main__":
 
 # TODO:
 
-# indexing
+# simple search, regex search, fuzzy search, semantic search
 
 # simple split at newline, split into english sentences
 
-# simple search, regex search, fuzzy search, semantic search
+# print context - a few lines above and a few lines below
+
+# search the search result, multiple piping
+
+# indexing
 

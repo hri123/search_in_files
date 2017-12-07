@@ -9,6 +9,7 @@
 
 import sys
 import glob
+from fuzzywuzzy import fuzz
 
 search_phrase = sys.argv[1]
 files_list = sys.argv[2]
@@ -19,10 +20,15 @@ if __name__ == "__main__":
     for filename in glob.iglob(files_list, recursive=True):
         with open(filename, 'r') as myfile:
 
+# split file into lines
+
+            file_content = myfile.readlines()
+            for line in file_content[0:]:
+                ratio = fuzz.partial_ratio(search_phrase, line)
+                if ratio > 60:
+                    print(line)
 
             myfile.close()
-
-# split file into lines
 
 # search phrase matches the lines ?
 

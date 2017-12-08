@@ -1,6 +1,6 @@
 # search_in_files
 
-## Semantic Search / Fuzzy Search
+## Semantic Search / Fuzzy Search - My Research
 
 Fuzzy String Matching in Python:
 https://github.com/seatgeek/fuzzywuzzy
@@ -37,6 +37,18 @@ Linux Utility:
 https://github.com/laurikari/tre/
 https://stackoverflow.com/questions/9439121/fuzzy-file-search-in-linux-console/19805303#19805303
 
+Search in stackoverflow:
+- https://stackoverflow.com/search?q=search+that+can+match+verb+and+noun+form+of+the+word
+
+Best answer:
+- https://stackoverflow.com/questions/8716227/best-way-to-rank-sentences-based-on-similarity-from-a-set-of-documents/8716778#8716778
+
+Lemmatization, Stemming:
+- https://stackoverflow.com/questions/29277753/nlp-retrieve-vocabulary-from-text/29282868#29282868
+
+URL fuzzy / semantic search:
+- https://stackoverflow.com/questions/203278/are-clean-urls-a-backend-or-a-frontend-thing/206941#206941
+
 ### Convert to a executable
 
 http://www.mxm.dk/2008/02/python-eggs-simple-introduction.html
@@ -48,14 +60,17 @@ https://stackoverflow.com/questions/4576077/python-split-text-on-sentences/31505
 ## finds - line with moby and sauce and tartar in ANY ORDER
 
 - ag with PCRE (Perl Compatible Regular Expression)
-ag '(?=.*?moby)(?=.*?sauce)(?=.*?tartar)^.*$' /Users/hrishikesh/H/HP/Dropbox/Kaizen/ng-rb/RB-files/attitude/rb/
+ag '(?=.*?m[^\s]+y)(?=.*?sauce)(?=.*?tartar)^.*$' /Users/hrishikesh/H/HP/Dropbox/Kaizen/ng-rb/RB-files/attitude/rb/
+(https://regexr.com/3hnol)
 
 - AWK
-awk 'tolower($0) ~ /dick/ && tolower($0) ~ /moby/ && tolower($0) ~ /tartar/' /Users/hrishikesh/H/HP/Dropbox/Kaizen/ng-rb/RB-files/attitude/rb/**/*.*
-
-using m.*y instead of moby
-awk 'tolower($0) ~ /dick/ && tolower($0) ~ /m.*y/ && tolower($0) ~ /tartar/' /Users/hrishikesh/H/HP/Dropbox/Kaizen/ng-rb/RB-files/attitude/rb/**/*.*
+awk 'tolower($0) ~ /m[^\s]+y/ && tolower($0) ~ /sauce/ && tolower($0) ~ /tartar/' /Users/hrishikesh/H/HP/Dropbox/Kaizen/ng-rb/RB-files/attitude/rb/**/*.*
 
 - grep
 
 (use ag for now)
+
+## Test your Regular Expressions
+
+https://regexr.com
+

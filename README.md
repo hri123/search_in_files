@@ -49,6 +49,9 @@ Lemmatization, Stemming:
 URL fuzzy / semantic search:
 - https://stackoverflow.com/questions/203278/are-clean-urls-a-backend-or-a-frontend-thing/206941#206941
 
+Gensim (Generate Similar):
+- https://radimrehurek.com/gensim/about.html
+
 ### Convert to a executable
 
 http://www.mxm.dk/2008/02/python-eggs-simple-introduction.html
@@ -59,9 +62,12 @@ https://stackoverflow.com/questions/4576077/python-split-text-on-sentences/31505
 
 ## finds - line with moby and sauce and tartar in ANY ORDER
 
+(lookahead search)
+
 - ag with PCRE (Perl Compatible Regular Expression)
 ag '(?=.*?m[^\s]+y)(?=.*?sauce)(?=.*?tartar)^.*$' /Users/hrishikesh/H/HP/Dropbox/Kaizen/ng-rb/RB-files/attitude/rb/
-(https://regexr.com/3hnol)
+See https://regexr.com/3hnol for the explanation of each of the characters in the regular expression
+
 
 NOTE: PCRE works in sublime text, did not work for me in visual studio code (https://stackoverflow.com/questions/42179046/what-flavor-of-regex-does-visual-studio-code-use/42184299#42184299)
 
